@@ -32,7 +32,7 @@ Automating visual inspection of photovoltaic (PV) modules helps identify physica
 | **Macro Average** | 0.812 | **0.823** | **+1.1%** | **Balanced multi-class performance lift.** |
 | **Overall Accuracy** | 80.8% | **81.9%** | **+1.1%** | Lowest test loss of the project (0.6084). |
 
-> **Note**: Even with `SEED = 42` set, exact numbers may vary slightly ($\pm 0.5\% - 1\%$) across runs due to parallel GPU calculations, asynchronous data loading, and random data augmentations, but overall trends and defect detection results remain identical.
+> **Note**: Even with `SEED = 42` set, exact numbers may vary slightly across runs due to parallel GPU calculations, asynchronous data loading, and random data augmentations, but overall trends and defect detection results remain identical.
 
 ---
 
