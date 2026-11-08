@@ -182,6 +182,6 @@ solar_pv/
 ### 3. Run Notebook
 Launch Jupyter:
 ```bash
-jupyter lab draft.ipynb
+jupyter lab model.ipynb
 ```
 
