@@ -1,4 +1,4 @@
-# Autonomous Solar Panel Defect Classification: An End-to-End Deep Learning Pipeline
+# Solar Panel Defect Classification: An End-to-End Deep Learning Pipeline
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16%2B-orange.svg)](https://tensorflow.org/)
