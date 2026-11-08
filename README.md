@@ -21,21 +21,16 @@ Automating visual inspection of photovoltaic (PV) modules helps identify physica
 * **Physical Damage Precision**: **$90.9\%$ Precision** on `Physical-Damage` (only 1 false alarm out of all 177 validation images).
 * **Generalization Gap**: Held at **$5.21\%$** ($88.26\%$ train vs. $83.05\%$ val), showing healthy fit without severe overfitting.
 
-$$\begin{array}{|l|c|c|c|l|}
-\hline
-\textbf{Class} & \textbf{Baseline F1 (Phase 5)} & \textbf{Fine-Tuned F1 (Phase 6)} & \mathbf{\Delta} & \textbf{Operational Impact} \\
-\hline
-\text{Bird-drop} & 0.730 & \mathbf{0.819} & \mathbf{+8.9\%} & \text{Better recognition of subtle surface drops on glass.} \\
-\text{Clean} & 0.771 & \mathbf{0.778} & +0.7\% & \text{Maintained strong baseline accuracy.} \\
-\text{Dusty} & 0.824 & \mathbf{0.800} & -2.4\% & \text{Minor trade-off with faint bird-drop patterns.} \\
-\text{Electrical-damage} & \mathbf{0.864} & \mathbf{0.826} & -3.8\% & \mathbf{90.5\%}\text{ recall preserved (19/21 defects caught).} \\
-\text{Physical-Damage} & 0.737 & \mathbf{0.800} & \mathbf{+6.3\%} & \text{Precision surged from } 83.3\% \rightarrow \mathbf{90.9\%}. \\
-\text{Snow-Covered} & 0.936 & \mathbf{0.917} & -1.9\% & \text{Near-perfect precision (}95.7\%\text{).} \\
-\hline
-\textbf{Macro Average} & 0.812 & \mathbf{0.823} & \mathbf{+1.1\%} & \textbf{Balanced multi-class performance lift.} \\
-\textbf{Overall Accuracy} & 80.8\% & \mathbf{81.9\%} & \mathbf{+1.1\%} & \text{Lowest test loss of the project (} 0.6084 \text{).} \\
-\hline
-\end{array}$$
+| Class | Baseline F1 (Phase 5) | Fine-Tuned F1 (Phase 6) | Delta ($\Delta$) | Operational Impact |
+| :--- | :---: | :---: | :---: | :--- |
+| **Bird-drop** | 0.730 | **0.819** | **+8.9%** | Better recognition of subtle surface drops on glass. |
+| **Clean** | 0.771 | **0.778** | +0.7% | Maintained strong baseline accuracy. |
+| **Dusty** | 0.824 | **0.800** | -2.4% | Minor trade-off with faint bird-drop patterns. |
+| **Electrical-damage** | **0.864** | **0.826** | -3.8% | **90.5% recall preserved** (19/21 defects caught). |
+| **Physical-Damage** | 0.737 | **0.800** | **+6.3%** | Precision surged from 83.3% → **90.9%**. |
+| **Snow-Covered** | 0.936 | **0.917** | -1.9% | Near-perfect precision (95.7%). |
+| **Macro Average** | 0.812 | **0.823** | **+1.1%** | **Balanced multi-class performance lift.** |
+| **Overall Accuracy** | 80.8% | **81.9%** | **+1.1%** | Lowest test loss of the project (0.6084). |
 
 > **Note**: Even with `SEED = 42` set, exact numbers may vary slightly ($\pm 0.5\% - 1\%$) across runs due to parallel GPU calculations, asynchronous data loading, and random data augmentations, but overall trends and defect detection results remain identical.
 
