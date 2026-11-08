@@ -37,6 +37,8 @@ $$\begin{array}{|l|c|c|c|l|}
 \hline
 \end{array}$$
 
+> **Note on Reproducibility**: Numerical metrics and per-class counts reported above reflect the benchmark run. Because stochastic operations (such as GPU thread scheduling and data augmentation) introduce minor non-determinism, values may vary slightly when re-running the entire notebook, though overall conclusions and defect detection trends remain unchanged.
+
 ---
 
 ## 2. Technical Challenges & Key Design Decisions
