@@ -1,0 +1,11 @@
+# Large dataset archives (GitHub 100MB limit)
+*.zip
+*.h5
+*.keras
+
+# Operating System & IDE junk
+.DS_Store
+.ipynb_checkpoints/
+
+# Raw dataset directory
+solar_pv/
