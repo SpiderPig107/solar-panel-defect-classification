@@ -121,6 +121,21 @@ Classification Head:
 
 ## 5. Confusion Matrix Analysis & Findings
 
+<p align="center">
+  <img src="confusion_matrix.png" alt="Confusion Matrix" width="550"/>
+</p>
+
+### Confusion Matrix (Raw Counts across 177 Validation Images)
+
+| True \ Predicted | Bird-drop | Clean | Dusty | Electrical-damage | Physical-Damage | Snow-Covered |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Bird-drop** | **34** | 2 | 3 | 1 | 1 | 0 |
+| **Clean** | 2 | **28** | 4 | 4 | 0 | 0 |
+| **Dusty** | 4 | 2 | **32** | 0 | 0 | 0 |
+| **Electrical-damage** | 0 | 1 | 0 | **19** | 0 | 1 |
+| **Physical-Damage** | 2 | 1 | 0 | 1 | **10** | 0 |
+| **Snow-Covered** | 0 | 0 | 3 | 0 | 0 | **22** |
+
 Reviewing the final confusion matrix on the 177 validation images showed three main patterns:
 
 1. **High Catch Rate on Severe Defects**:
@@ -167,3 +182,4 @@ Launch Jupyter:
 ```bash
 jupyter lab draft.ipynb
 ```
+
