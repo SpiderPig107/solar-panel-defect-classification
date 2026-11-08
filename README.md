@@ -37,7 +37,7 @@ $$\begin{array}{|l|c|c|c|l|}
 \hline
 \end{array}$$
 
-> **Note**: Exact numbers may vary slightly each time the notebook is re-run due to random training seeds and data augmentation, but overall results and performance remain the same.
+> **Note**: Even with random seeds fixed, exact numbers may vary slightly each time the notebook is re-run due to multi-threaded GPU operations, but overall results remain the same.
 
 ---
 
